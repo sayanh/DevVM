@@ -5,7 +5,7 @@
 
 #facter server
 server_name=$1
-sed -i "s/s_name/${server_name}/" modules/custom_fact/lib/facter/cust_fact.rb
+# sed -i "s/s_name/${server_name}/" modules/custom_fact/lib/facter/cust_fact.rb
 facter --puppet modules/custom_fact/lib/facter/cust_fact.rb
 
 sudo apt-get update
